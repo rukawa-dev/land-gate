@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land Gate | Multi-Channel Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-6 relative">
+
+  <!-- Decorative Blobs -->
+  <div class="blob top-0 left-0"></div>
+  <div class="blob blob-red bottom-0 right-0"></div>
+
+  <!-- Content Wrapper -->
+  <div class="max-w-6xl w-full flex flex-col items-center z-10">
+    <!-- Header -->
+    <header class="text-center mb-16 space-y-4">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-green-400">
+          Land Multi-Channel
+        </span>
+      </h1>
+      <p class="text-gray-400 text-lg md:text-xl font-light">Land Universe: Infinite Worlds, One Gateway</p>
+    </header>
+
+    <!-- Channel Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+
+      <!-- Channel 1: ZeldaLand -->
+      <a href="https://litt.ly/zeldaland" target="_blank"
+        class="glass-card hover-glow-blue rounded-3xl p-8 flex flex-col items-center group">
+        <div
+          class="w-16 h-16 rounded-2xl bg-accent-blue/10 flex items-center justify-center mb-6 border border-accent-blue/20 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8 accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-2 group-hover:text-blue-400 transition-colors">ZELDA-LAND</h2>
+        <p class="text-gray-400 text-center text-sm mb-6">젤다의 전설의 모든것</p>
+        <span
+          class="px-4 py-2 rounded-full border border-accent-blue/30 text-xs font-semibold uppercase tracking-wider accent-blue group-hover:bg-accent-blue/10 transition-all">Visit
+          Channel</span>
+      </a>
+
+      <!-- Channel 2: Rukawa -->
+      <a href="https://litt.ly/rukawa" target="_blank"
+        class="glass-card hover-glow-red rounded-3xl p-8 flex flex-col items-center group">
+        <div
+          class="w-16 h-16 rounded-2xl bg-accent-red/10 flex items-center justify-center mb-6 border border-accent-red/20 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8 accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-2 group-hover:text-red-400 transition-colors">PLAY-LAND</h2>
+        <p class="text-gray-400 text-center text-sm mb-6">더 넓은 게임 플레이</p>
+        <span
+          class="px-4 py-2 rounded-full border border-accent-red/30 text-xs font-semibold uppercase tracking-wider accent-red group-hover:bg-accent-red/10 transition-all">Visit
+          Channel</span>
+      </a>
+
+      <!-- Channel 3: SoftLand -->
+      <a href="https://litt.ly/softland" target="_blank"
+        class="glass-card hover-glow-green rounded-3xl p-8 flex flex-col items-center group">
+        <div
+          class="w-16 h-16 rounded-2xl bg-accent-green/10 flex items-center justify-center mb-6 border border-accent-green/20 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8 accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-2 group-hover:text-green-400 transition-colors">SOFT-LAND</h2>
+        <p class="text-gray-400 text-center text-sm mb-6">세상에 필요한 모든 프로그래밍</p>
+        <span
+          class="px-4 py-2 rounded-full border border-accent-green/30 text-xs font-semibold uppercase tracking-wider accent-green group-hover:bg-accent-green/10 transition-all">Visit
+          Channel</span>
+      </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-24 pb-12 text-slate-500 text-xs font-light tracking-[0.2em] text-center uppercase opacity-70">
+      &copy; SOFT-LAND. ALL RIGHTS RESERVED.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

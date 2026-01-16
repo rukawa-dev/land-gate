@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    background-color: #020617;
+    overflow-x: hidden;
+    margin: 0;
+    color: white;
+}
+
+/* Animated Blobs */
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(16, 185, 129, 0.2));
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: move 20s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translate(-10%, -10%) scale(1);
+    }
+
+    to {
+        transform: translate(20%, 20%) scale(1.1);
+    }
+}
+
+.blob-red {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(245, 158, 11, 0.2));
+    animation: move-reverse 25s infinite alternate;
+    right: -100px;
+    bottom: -100px;
+}
+
+@keyframes move-reverse {
+    from {
+        transform: translate(10%, 10%) scale(1.1);
+    }
+
+    to {
+        transform: translate(-20%, -20%) scale(1);
+    }
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Accent Glows */
+.hover-glow-blue:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.hover-glow-red:hover {
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
+}
+
+.hover-glow-green:hover {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+}
+
+.accent-blue {
+    color: #3b82f6;
+}
+
+.accent-red {
+    color: #ef4444;
+}
+
+.accent-green {
+    color: #10b981;
+}
+
+.bg-accent-blue {
+    background-color: #3b82f6;
+}
+
+.bg-accent-red {
+    background-color: #ef4444;
+}
+
+.bg-accent-green {
+    background-color: #10b981;
+}
