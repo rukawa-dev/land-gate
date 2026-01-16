@@ -9,41 +9,55 @@ body {
 }
 
 /* Animated Blobs */
-.blob {
+.blob-container {
     position: absolute;
     width: 500px;
     height: 500px;
+    will-change: transform;
+    pointer-events: none;
+}
+
+#blob-1 {
+    top: 0;
+    left: 0;
+}
+
+#blob-2 {
+    bottom: -100px;
+    right: -100px;
+}
+
+.blob {
+    width: 100%;
+    height: 100%;
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(16, 185, 129, 0.2));
     filter: blur(80px);
     border-radius: 50%;
-    z-index: -1;
-    animation: move 20s infinite alternate;
+    animation: move 20s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 @keyframes move {
     from {
-        transform: translate(-10%, -10%) scale(1);
+        transform: translate(-5%, -5%) scale(1);
     }
 
     to {
-        transform: translate(20%, 20%) scale(1.1);
+        transform: translate(10%, 10%) scale(1.1);
     }
 }
 
 .blob-red {
     background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(245, 158, 11, 0.2));
-    animation: move-reverse 25s infinite alternate;
-    right: -100px;
-    bottom: -100px;
+    animation: move-reverse 25s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 @keyframes move-reverse {
     from {
-        transform: translate(10%, 10%) scale(1.1);
+        transform: translate(5%, 5%) scale(1.1);
     }
 
     to {
-        transform: translate(-20%, -20%) scale(1);
+        transform: translate(-10%, -10%) scale(1);
     }
 }
 
