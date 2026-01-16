@@ -112,3 +112,28 @@ body {
 .bg-accent-green {
     background-color: #10b981;
 }
+
+/* Main Logo Styling & Animation */
+.main-icon-container {
+    filter: drop-shadow(0 0 30px rgba(79, 172, 254, 0.6)) drop-shadow(0 0 10px rgba(114, 255, 125, 0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    animation: float 6s ease-in-out infinite;
+    object-fit: contain;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.02);
+    }
+}

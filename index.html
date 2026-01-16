@@ -11,10 +11,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="min-h-screen flex flex-col items-center justify-center p-6 relative">
+
 
   <!-- Decorative Blobs with Containers -->
   <div class="blob-wrapper fixed inset-0 overflow-hidden pointer-events-none -z-10">
@@ -29,7 +35,11 @@
   <!-- Content Wrapper -->
   <div class="max-w-6xl w-full flex flex-col items-center z-10">
     <!-- Header -->
-    <header class="text-center mb-16 space-y-4">
+    <header class="text-center mb-16 space-y-6 flex flex-col items-center">
+      <div class="main-icon-container mb-4">
+        <img src="./imgs/main-logo.png" alt="Land Gate Premium Logo"
+          class="w-48 h-48 md:w-64 md:h-64 main-logo rounded-3xl">
+      </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-green-400">
           Land Multi-Channel
